@@ -67,7 +67,7 @@ Once the booking is confirmed, n8n sends a formatted Slack message to the clinic
 - Staff always informed instantly. No wondering if an appointment was actually booked
 - Zero manual data entry. Patient details flow directly from the call into the calendar
 
-One clinic that used this system saw a 40% increase in completed bookings in the first month, simply because calls were no longer going unanswered.
+The Healthcare clinic that used this system saw a 40% increase in completed bookings in the first month, simply because calls were no longer going unanswered.
 
 ---
 
