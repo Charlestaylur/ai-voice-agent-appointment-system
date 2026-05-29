@@ -4,6 +4,9 @@
 **Stack:** Vapi, n8n, Google Calendar API, Slack, Webhooks  
 **Demo video:** [Watch the full walkthrough](https://drive.google.com/file/d/1EfrxxfRt4calkABHk4Db2_goD9IFomn8/view?usp=drivesdk)
 
+<img width="1366" height="768" alt="Screenshot (521)" src="https://github.com/user-attachments/assets/11d6bb88-e6fb-413a-9a49-ba62eef66636" />
+
+
 ---
 
 ## The Problem
