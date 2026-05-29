@@ -74,6 +74,6 @@ The Healthcare clinic that used this system saw a 40% increase in completed book
 ## About
 
 Built by **Charles Emmanuel** — AI & Automation Systems Engineer  
-Lagos, Nigeria | [LinkedIn](https://linkedin.com/in/charles-emmanuel-automation)  
+Lagos, Nigeria | [LinkedIn](https://linkedin.com/in/charles-emmanuel-automation) 
 
 I build systems that remove repetitive work so teams can focus on what matters. If your business is losing time or money to manual processes, reach out.
