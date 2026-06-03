@@ -1,79 +1,78 @@
-# AI Voice Agent Appointment Booking System
+# Real Estate Investment Automation System
 
-**Industry:** Healthcare / Medical Clinics, Service Businesses  
-**Stack:** Vapi, n8n, Google Calendar API, Slack, Webhooks  
-**Demo video:** [Watch the full walkthrough](https://drive.google.com/file/d/1EfrxxfRt4calkABHk4Db2_goD9IFomn8/view?usp=drivesdk)
+> AI-powered investment research pipeline that matches properties, runs financial analysis, generates reports, and notifies the team automatically using n8n, OpenAI, Google Sheets, Slack, and Gmail.
+
+**Industry:** Real Estate
+**Built for:** Investment firms and real estate teams that want to automate property research and deal reporting without losing hours to manual data gathering.
+
+---
+
+## Demo
+
+[Watch the full walkthrough →](https://drive.google.com/file/d/11TgDuEtlnMu0DBSbk_kovLGjmxuKo37l/view)
+
+<img width="852" height="405" alt="Github real" src="https://github.com/user-attachments/assets/8e1a53ce-9f65-44c7-98ac-a21aab8f1459" />
+
 
 ---
 
 ## The Problem
 
-A medical clinic was losing appointments. Not because the staff was bad. They just could not handle the call volume.
+A client comes in looking for a property investment opportunity. The team has to start from scratch every time.
 
-Patients would call to book. If the receptionist was with another patient or on lunch, the call went to voicemail. Most people did not call back. Those who did call back found the same problem.
+Searching through listings. Calling agents. Comparing multiple opportunities. Checking locations and pricing. Running ROI and cash flow calculations. Trying to organize everything into spreadsheets and reports before management can even review the deal.
 
-The clinic tried hiring a second person just to answer phones. It helped but the cost was high and staff still had to manually check the calendar, write down details, and log everything into the system. Errors happened. Double bookings happened. Appointments got lost.
-
-The real problem: the booking process needed a person. It could not run on its own.
+When multiple requests come in at the same time, the entire process breaks down. Things get missed. Deals get delayed. Hours disappear into manual data gathering that should not require human attention.
 
 ---
 
 ## The Solution
 
-I built an AI voice agent that answers the phone, collects what the patient needs, checks availability, and books the appointment. No human involved. No voicemail. No callbacks.
+A fully automated investment research and reporting pipeline built inside n8n. The moment a client submits their investment requirements, the system takes over.
 
-A patient calls the clinic's AI number. They hear a natural voice greeting. They say what they need and when. The AI asks clarifying questions, checks the calendar, confirms the slot is open, and books it. The whole call takes under two minutes. The patient gets a confirmation. The staff gets a Slack notification with all the details.
-
-The system works 24/7. No lunch breaks. No off hours. Every call that comes in gets a booked appointment on the first try.
+It matches properties based on the client's criteria, pulls live listing data, runs financial analysis, generates a formatted investment report, updates the CRM, and sends instant notifications to the team on Slack and a report to the client via Gmail. All without anyone touching a spreadsheet.
 
 ---
 
 ## How It Works
 
-**Step 1 — Customer calls the AI number**  
-The call connects to a Vapi voice agent. The AI answers, introduces itself, and asks what appointment the customer needs.
-
-**Step 2 — AI collects appointment details**  
-Through natural conversation, the agent asks for the customer's name, phone number, preferred date and time, and the reason for the visit. The AI understands spoken language naturally, so it feels like talking to a real person.
-
-**Step 3 — Availability is checked in real time**  
-While the customer is still on the call, the AI triggers an n8n workflow via webhook. The workflow queries Google Calendar to see if the requested time slot is open.
-
-**Step 4 — Appointment is booked automatically**  
-If the slot is free, the workflow creates the calendar event immediately and confirms the booking with the customer. If the slot is taken, the AI suggests the next available time.
-
-**Step 5 — Team is notified instantly**  
-Once the booking is confirmed, n8n sends a formatted Slack message to the clinic's team channel with the patient's name, phone number, appointment time, and reason for visit. The team knows immediately.
+1. **Client submits investment requirements via intake form** — The workflow triggers the moment a client fills out the intake form. Name, budget, target location, property type, and investment goals are captured automatically and passed into the pipeline.
+2. **AI Agent matches and researches properties** — An n8n AI Agent powered by OpenAI processes the client's criteria and queries property listing APIs to find matching opportunities. It filters by location, price range, property type, and availability.
+3. **Financial analysis runs automatically** — For each matched property, the system calculates ROI, projected cash flow, yield estimates, and key financial metrics. No manual spreadsheet work required.
+4. **Investment report is generated** — A structured report is compiled for the matched properties, including all property details, listing links, agent contacts, and financial projections. Ready for management review.
+5. **CRM is updated** — All deal data, client requirements, matched properties, and generated reports are pushed into the Google Sheets CRM. Every request has a clean audit trail.
+6. **Team is notified on Slack** — An instant Slack notification goes to the relevant team channel with a summary of matched properties and a link to the full report.
+7. **Report delivered via Gmail** — A formatted report email is sent automatically to the client or internal distribution list.
 
 ---
 
-## Tools & Stack
+## Tech Stack
 
 | Tool | Role |
 |---|---|
-| **Vapi** | Voice AI agent that handles the phone call and conversation |
-| **n8n** | Automation orchestrator, connects Vapi to Google Calendar and Slack |
-| **Google Calendar API** | Real-time availability check and event creation |
-| **Slack** | Instant team notification on every new booking |
-| **Webhooks** | Communication bridge between Vapi and n8n |
+| **n8n** | Core workflow engine and orchestration layer |
+| **n8n AI Agent Node** | Runs the LangChain-based agent logic for property matching and criteria processing |
+| **OpenAI API** | Powers the agent's natural language understanding and decision making |
+| **REST APIs** | Pulls live property listing data and external data sources |
+| **Google Sheets** | CRM that stores client requests, matched properties, and generated reports |
+| **Slack** | Real-time team notifications with deal summaries |
+| **Gmail** | Automated report delivery to clients and internal teams |
 
 ---
 
-## Real-World Impact
+## Results
 
-- No more missed calls. Every incoming call gets an appointment or a callback option
-- Receptionist freed from phone duty. Now they focus on patient care instead of bookings
-- Patients book outside business hours. A call at 2am gets booked for the next available morning slot
-- Staff always informed instantly. No wondering if an appointment was actually booked
-- Zero manual data entry. Patient details flow directly from the call into the calendar
-
-The Healthcare clinic that used this system saw a 40% increase in completed bookings in the first month, simply because calls were no longer going unanswered.
+- Eliminated hours of manual research per client request
+- Zero deals missed due to manual process gaps
+- Team shifted focus from data gathering to deal review and closing
+- All client requests centralized in one trackable, searchable system
+- System runs 24/7 without supervision
 
 ---
 
 ## About
 
-Built by **Charles Emmanuel** — AI & Automation Systems Engineer  
-Lagos, Nigeria | [LinkedIn](https://linkedin.com/in/charles-emmanuel-automation) 
+Built by **Charles Emmanuel** — AI & Automation Systems Engineer.
+Lagos, Nigeria | [LinkedIn](https://linkedin.com/in/charles-emmanuel-automation) | charlestaylurr@gmail.com
 
-I build systems that remove repetitive work so teams can focus on what matters. If your business is losing time or money to manual processes, reach out.
+I build systems that remove repetitive manual work so teams can focus on what actually matters. If your business is losing time or money to broken processes, reach out.
